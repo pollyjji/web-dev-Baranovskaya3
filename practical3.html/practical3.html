@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FFB6C1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1600px; /* only for demonstration, should be removed */
+  background: #FFE4E1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFAFA;
+  height: 1600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFB6C1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.bg-p6 {
+background: linear-gradient(to right, #FFB6C1 , #feb47b);            
+        }
+
+.bg-p7 {
+background: repeating-linear-gradient(to right, #dc143c , #ff7e5f);            
+        }
+
+.bg-images {
+background-image: url('ocean.jpeg');
+            
+        }
+
+.bg-multiple-images {
+            background-image: url('1.jpeg'), url('2.jpeg'); /* Multiple images as background */
+            background-size: cover;
+            background-blend-mode: multiply; /* Blend mode for transparency */
+
+  
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2 style="border-style: double;">Practical3.html</h2>
+</header>
+
+
+ 
+    <dt id="1"> <h2> Question1</h2></dt>
+    <h3>Research for and describe the ways to open developers console in Mozilla Firefox and Safari.</h3>
+   <dd>  In Mozilla Firefox, you can open the developer console and there are two options:
+<dl>
+- Right-click on the web page, select "Check item", then go to the "Console" tab 
+<dl>
+- <i style="border-bottom: solid 2px;"> Press F12 </i></dd>
+
+  <dl>
+<dd>In Safari to open the developer console in both ways:
+<dl>
+Go to Safari - Settings - Advanced and check the box labeled "Show the development menu in the menu bar".  As soon as the development menu appears in the menu bar, you need to select "Show Error Console" or "Show Web Inspector" to access the developer tools.</dd>
+    <dl>
+    
+    
+  <dl>
+  
+    <dt id="2" ><h2>Question2</h2></dt>
+     <h3>What way of including internal links into the HTML page you would consider generally preferable: absolute or relative links? Describe use cases for choosing absolute links and choosing relative links.</h3>
+   <dd> Usually, using relative links for internal linking on an HTML page is better than absolute links. Relative links are easier to maintain, especially when moving files to different folders or when changing file names. Absolute links are necessary when placing links to external websites or to a specific page in another domain, they themselves are inconvenient (well, as for me)
+<dl>
+Examples of using absolute links:
+When placing links to certain pages in another domain
+When linking to external websites
+When creating links to resources that can be cached in a CDN
+<dl>
+Usage examples for selecting relative links:
+When creating links to pages within the same domain
+ While maintaining the flexibility of the file structure and organization
+When creating links to resources within the same folder or subfolder</dd>
+   
+    <dl>
+    <dl>
+ 
+    <dt id="3" ><h2>Question3</h2></dt>
+     <h3>Research and write about image formats used in web-development. What is the difference between JPG, GIF and PNG formats? What is WEBP image type? What is SVG?</h3>
+   
+     <dd>
+     
+- <strong style="border-bottom: solid 2px #ccc;">JPG: </strong> Lossy compression format (for photos (not suitable for images with sharp edges or text) and other detailed images)
+<dl>
+- GIF: lossless compression format (supports animation and transparency). This is the best option for simple images, logos and icons.
+<dl>
+- PNG: A lossless compression format that supports transparency and is ideal for images with clear edges, text or illustrations.
+<dl>
+- WEBP: An image format developed by Google that provides excellent compression and quality compared to JPG and PNG (it supports transparency and animation)
+<dl>
+- SVG: A resolution-independent vector image format that is scalable without loss of quality. Ideal for icons, logos, and illustrations that need to be resized dynamically. </dd>
+  
+  <dl>
+  
+    <dt id="1" ><h2>Question5</h2></dt>
+    <h3>Experiment with setting the background using a hex color code, a color name, and
+the rgba function </h3>
+<dd style="background-color: pink;">  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</dd>
+  
+    <dl>
+    <dl> 
+<dl>
+ 
+    <dt id="3" ><h2>Question6</h2></dt>
+     <h3>Set gradient background</h3>
+   
+     <dd>
+<p class="bg-p6">
+
+
+   There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. 
+</dd>
+   
+
+<dl>
+ 
+    <dt id="3" ><h2>Question7</h2></dt>
+     <h3>Set gradient repeating background</h3>
+   
+     <dd>
+<p class="bg-p7">
+But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+
+ </dd>
+   
+<dl>
+ 
+    <dt id="3" ><h2>Question8</h2></dt>
+     <h3>Set the background to an image</h3>
+   
+     <dd>
+<p class="bg-images">
+
+On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. 
+
+
+ </dd>
+
+<dl>
+ 
+    <dt id="3" ><h2>Question9</h2></dt>
+     <h3>Set multiple images (semitransparent) as background for the same paragraph</h3>
+   
+     <dd>
+ <p class="bg-multiple-images">
+ 
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+ </dd>
+<dl>
+
+<img src="screen.png" style="width: 960px;">
+    
+    
+
+<footer>
+  <footer style="border-style: dotted;">
+ 
+These are the answers to the questions, I figured them out, everything was clear to me
+ 
+
+
+</footer>
+</footer>
+
+</body>
+</html>
